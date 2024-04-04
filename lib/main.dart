@@ -73,11 +73,11 @@ class _Test_BottomNavigationBar extends State<Test_BottomNavigationBar> {
         items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
-            label: 'ホーム',
+            label: 'Simple',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.search),
-            label: '検索',
+            label: 'Builder',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
