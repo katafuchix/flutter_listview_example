@@ -1,0 +1,1 @@
+const double MAX_APP_WIDTH = 640;
