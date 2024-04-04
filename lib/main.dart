@@ -46,6 +46,7 @@ class _Test_BottomNavigationBar extends State<Test_BottomNavigationBar> {
     ListBuilderExamplePage(),
     //ListsWithCards(),
     _ChildPage1(),
+    _ChildPage2(),
     //_ChildPage3(),
   ];
 
@@ -84,8 +85,17 @@ class _Test_BottomNavigationBar extends State<Test_BottomNavigationBar> {
             icon: Icon(Icons.person),
             label: 'プロフィール',
           ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.history),
+            label: '履歴',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.credit_card),
+            label: 'チケット',
+          ),
         ],
         currentIndex: _selectedIndex,
+        type: BottomNavigationBarType.fixed,
         onTap: _onItemTapped,
       ),
     );
