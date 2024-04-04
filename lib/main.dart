@@ -3,6 +3,7 @@ import './HomePage.dart';
 import './ListPage.dart';
 import './ListsWithCards.dart';
 import './ListBuilderExampleScreen.dart';
+import 'ui/widget_circular_progress.dart';
 
 void main() {
   runApp(const MyApp());
@@ -44,7 +45,7 @@ class _Test_BottomNavigationBar extends State<Test_BottomNavigationBar> {
     ListsWithCards(),
     ListBuilderExamplePage(),
     //ListsWithCards(),
-    _ChildPage2(),
+    _ChildPage1(),
     //_ChildPage3(),
   ];
 
@@ -111,7 +112,7 @@ class _ChildPage1State extends State<_ChildPage1> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Text('ChildPage1 count is $_counter'),
+        child: WidgetCircularProgress(),//Text('ChildPage1 count is $_counter'),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
