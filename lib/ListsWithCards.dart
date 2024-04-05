@@ -19,12 +19,30 @@ class _ListsWithCards extends State<ListsWithCards> {
       ['Item M', 'Item N', 'Item O'],
     ];
 
+    Future<void> _refresh() {
+      return Future.delayed(
+        const Duration(seconds: 3),
+      );
+    }
+
+    return RefreshIndicator(
+        onRefresh: _refresh,
+        child:ListView.builder(
+              itemCount: listsData.length,
+              itemBuilder: (context, index) {
+                return CardList(listData: listsData[index]);
+              },
+        )
+    );
+
+    /*
     return ListView.builder(
       itemCount: listsData.length,
       itemBuilder: (context, index) {
         return CardList(listData: listsData[index]);
       },
     );
+     */
   }
 }
 
