@@ -5,6 +5,7 @@ import './ListsWithCards.dart';
 import './ListBuilderExampleScreen.dart';
 import 'ui/widget_circular_progress.dart';
 import 'refresh_example_screen.dart';
+import 'load_example_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -48,7 +49,7 @@ class _Test_BottomNavigationBar extends State<Test_BottomNavigationBar> {
     //ListsWithCards(),
     _ChildPage1(),
     _ChildPage2(),
-    //_ChildPage3(),
+    LoadExampleScreen(),
   ];
 
 
